@@ -5,7 +5,7 @@ class App < Sinatra::Base
   configure do
     enable :sessions
     set :session_secret, "secret"
-    set :views, "views"
+    set :views,          "views"
   end
   
   get '/' do
