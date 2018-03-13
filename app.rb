@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
   
   get '/checkout' do
-    @item = session.delete[:item]
+    @item = session.delete(:item)
     p session
     erb :checkout
   end
